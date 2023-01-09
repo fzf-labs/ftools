@@ -650,3 +650,8 @@ func Move(srcPath string, dstPath string) error {
 	}
 	return nil
 }
+
+// Ext 文件扩展名
+func Ext(path string) string {
+	return strings.ToLower(filepath.Ext(path))
+}
